@@ -7,7 +7,7 @@ object Q1 extends App{
 	val inputText = scala.io.StdIn.readLine("Input the string = ")
 
 	//Encryption
-	val outputText_1 = inputText.map( (c: Char) => { 
+	val Text_1 = inputText.map( (c: Char) => { 
 
 		val x = alphabet.indexOf(c.toUpper)
 
@@ -20,7 +20,7 @@ object Q1 extends App{
 	});
 
 	//Decryption
-	val outputText_2 = inputText.map( (c: Char) => { 
+	val Text_2 = inputText.map( (c: Char) => { 
 
 		val x = alphabet.indexOf(c.toUpper)
 
@@ -32,6 +32,6 @@ object Q1 extends App{
 			} 
 	});
 
-	println("Encrypted string = "+outputText_1);
-	println("Decrypted string = "+outputText_2);
+	println("Encrypted string = "+Text_1);
+	println("Decrypted string = "+Text_2);
 }
